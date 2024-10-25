@@ -1,8 +1,9 @@
+
 pipeline {
     agent any
     environment {
-        DOCKER_HUB_CREDENTIALS = credentials('docker-hub-credentials-id')
-        DOCKER_IMAGE = "your-dockerhub-username/cicd-sample-app"
+        DOCKER_HUB_CREDENTIALS = credentials('docker-hub-credentials-id') 
+        DOCKER_IMAGE = "abhishek199/node-app"
     }
     stages {
         stage('Clone Repository') {
